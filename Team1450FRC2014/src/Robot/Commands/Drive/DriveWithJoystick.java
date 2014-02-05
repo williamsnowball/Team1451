@@ -14,11 +14,13 @@ public class DriveWithJoystick extends CommandBase {
     }
 
     protected void execute() {
-        driveTrain.arcadeDrive(oi.getDriveThrottle()*-1, oi.getDriveRotation());
+        driveTrain.arcadeDrive(oi.getDriveThrottle()*-0.7, oi.getDriveRotation()0.6);
+    else 
+        driveTrain.arcadeDrive(oi.getDriveThrottle()*-0.0, oi.getDriveRotation()0.0);
     }
 
     protected boolean isFinished() {
-        return false;
+        return true;
     }
 
     protected void end() {
